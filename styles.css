@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c5e4e7;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    color: #7f9c9f;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+  }
+  
+  .calculator {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-section,
+  .output-section {
+    width: 50%;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #5e7a7d;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #00474b;
+    border: 2px solid #f3f9fa;
+    border-radius: 5px;
+    background-color: #f3f9fa;
+    text-align: right;
+  }
+  
+  .tip-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tip-btn {
+    background-color: #00474b;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .tip-btn:hover,
+  #reset:hover {
+    background-color: #26c0ab;
+  }
+  
+  #custom-tip {
+    background-color: #f3f9fa;
+    border: 2px solid #f3f9fa;
+    color: #00474b;
+    border-radius: 5px;
+    text-align: right;
+  }
+  
+  #people {
+    border: 2px solid #f3f9fa;
+  }
+  
+  #error-message {
+    color: #e17052;
+    font-size: 0.8rem;
+    display: none;
+  }
+  
+  .output-section {
+    background-color: #00474b;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .result p {
+    margin: 0;
+  }
+  
+  .amount {
+    font-size: 2rem;
+  }
+  
+  #reset {
+    background-color: #26c0ab;
+    color: #00474b;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
